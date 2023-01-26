@@ -1,0 +1,243 @@
+/*        CSS variables         */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #000000;
+  --title-text-color: #212121;
+  --accent: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --button-active-bg-color: #188ce8;
+  --border-color: #eeeeee;
+}
+
+/*        Global properties       */
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*        Logo      */
+.logo {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-w {
+  color: var(--accent);
+}
+.logo-s {
+  color: var(--secondary-text-color);
+}
+
+/*         Navigation         */
+.site-nav .link {
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+
+.site-nav .link.current {
+  color: var(--accent);
+}
+
+/*        Contacts        */
+
+.header-contacts .contact {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts .contact:hover,
+.header-contacts .contact:focus {
+  color: var(--accent);
+}
+
+/*        Hero          */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-hero {
+  color: var(--primary-bg-color);
+  background-color: var(--accent);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--button-active-bg-color);
+}
+
+/*        Common sections properties        */
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/*        Our features */
+.features .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features .text {
+  color: var(--primary-text-color);
+  line-height: 1.71;
+}
+
+/*        Directions      */
+
+/*        Our team      */
+.company {
+  background-color: var(--secondary-bg-color);
+}
+
+.unit {
+  background-color: var(--primary-bg-color);
+}
+
+.team .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team .text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/*         Footer        */
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.logo-s-footer {
+  color: var(--primary-bg-color);
+}
+
+.address .location {
+  color: var(--primary-bg-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.address .contact {
+  color: var(--footer-contacts-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.address .location:hover,
+.address .contact:hover,
+.address .location:focus,
+.address .contact:focus {
+  color: var(--accent);
+}
+
+/*            Second page             */
+/*          Portfolio styles          */
+
+/*        Filter buttons        */
+.filter-button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-button:active {
+  background-color: var(--button-active-bg-color);
+}
+
+/* Projects list  */
+.projects .title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects .text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.item {
+  border: 1px solid var(--border-color);
+}
