@@ -90,8 +90,7 @@ body {
 /*        !Logo      */
 
 .header-wrap .logo {
-  margin-top: 24px;
-  margin-bottom: 23px;
+  padding: 24px 0 23px 0;
 }
 
 .logo {
@@ -324,7 +323,7 @@ body {
 .footer-wrap {
   display: flex;
   flex-direction: column;
-  padding: 60px 0 60px 15px;
+  padding: 60px 15px 60px 15px;
 }
 
 .footer-logo {
@@ -356,6 +355,7 @@ body {
   padding: 6px 22px;
   border: 0px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -372,12 +372,9 @@ body {
 
 .filter-wrap {
   display: flex;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.filter-button {
-  margin-right: 8px;
 }
 
 /*        !Projects list  */
@@ -389,11 +386,11 @@ body {
 
 .projects-item {
   width: 370px;
-  border-bottom: 1px solid var(--border-color);
 }
 
-.projects .img {
-  margin-bottom: 20px;
+.project-description {
+  border: 1px solid var(--border-color);
+  padding: 19px 23px;
 }
 
 .projects-title {
@@ -409,10 +406,5 @@ body {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-  margin-bottom: 19px;
-}
-
-.projects-title,
-.projects-text {
-  margin-left: 23px;
+  /* margin-bottom: 0; */
 }
